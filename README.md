@@ -1,4 +1,4 @@
 # googleDocs
-Content Management System with Google Docs
+Content Management System (CMS) with Google Docs
 
 Install and see the magic of Google Docs
