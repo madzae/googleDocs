@@ -1,0 +1,19 @@
+Create this two databases:
+
+CREATE TABLE `googleDocs` (
+  `id` int(11) NOT NULL,
+  `slug` text NOT NULL,
+  `author` text NOT NULL,
+  `document_id` varchar(255) NOT NULL,
+  `title` text NOT NULL,
+  `first_image` text DEFAULT NULL,
+  `subtitle` text DEFAULT NULL,
+  `content` longtext NOT NULL,
+  `datePublish` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+CREATE TABLE `googleDocsAuthor` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `email` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
